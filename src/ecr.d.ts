@@ -288,6 +288,16 @@ export interface Registry {
 	remove(this: Registry, id: Entity, ...components: ComponentArray): void;
 
 	/**
+	* Searches for an entity with given component value
+ 	*
+  	* @remarks
+   	*
+    	* Added from Cent's unpublished TS edits
+ 	*/
+
+	find<T>(this: Registry, ctype: T, value: T): entity?;
+
+	/**
 	 * Creates a [view](https://centau.github.io/ecr/api/View.html) for all entities with the specified components.
 	 * 
 	 * @remarks
