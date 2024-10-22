@@ -295,7 +295,7 @@ export interface Registry {
     	* Added from Cent's unpublished TS edits
  	*/
 
-	find<T extends unknown[]>(this: Registry, ctype: T, value: T): Entity?;
+	find<T extends unknown[]>(this: Registry, ctype: T, value: T): Entity | undefined;
 
 	/**
 	 * Creates a [view](https://centau.github.io/ecr/api/View.html) for all entities with the specified components.
