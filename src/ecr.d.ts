@@ -494,7 +494,7 @@ export namespace ecr {
 	 * registry.contains(ecr.null_id);
 	 * ```
 	 */
-	export const null_id: Entity;
+	export const null: Entity;
 
 	/**
 	 * The size of the entity id in bytes.
@@ -504,7 +504,7 @@ export namespace ecr {
 	/**
 	 * Creates a new registry.
 	 */
-	export function registry(): Registry;
+	export function registry(range_start?: number, range_stop?: number): Registry;
 
 	/**
 	 * Creates a new component type.
@@ -599,6 +599,8 @@ export namespace ecr {
 	 * If no target buffer is given, one will be created.
 	 */
 	export function array_to_buffer(arr: Entity[], size: number, buf?: buffer): buffer;
+
+	export function buffer_to_buffer(buf_src: buffer, size: number, buf_tar?: buffer): buffer
 
 	export function inspect(entity: Entity): LuaTuple<[number, number]>;
 }
