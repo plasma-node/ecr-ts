@@ -2259,4 +2259,7 @@ local ecr = {
     }
 }
 
-return table.freeze(ecr)
+-- TS EXCLUSIVE
+return {
+	default = table.freeze(ecr)
+}
