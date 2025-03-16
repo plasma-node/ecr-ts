@@ -2226,6 +2226,7 @@ local ecr = {
 
     entity = ctype_entity,
     null = ID_NULL,
+    null_id = ID_NULL,
     context = ID_CTX,
     id_size = ID_SIZE,
 

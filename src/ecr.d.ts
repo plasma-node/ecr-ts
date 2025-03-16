@@ -495,6 +495,9 @@ export namespace ecr {
 	 * ```
 	 */
 	export const null: Entity;
+	
+	// COMPAT WITH GORP
+	export const null_id: Entity;
 
 	/**
 	 * The size of the entity id in bytes.
